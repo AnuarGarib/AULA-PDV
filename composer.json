@@ -1,0 +1,21 @@
+{
+    "name": "anuar/pdv",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Anuar Garib",
+            "email": "anuar1garib@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6",
+        "dompdf/dompdf": "^3.1",
+        "phpoffice/phpspreadsheet": "^5.3"
+    }
+}

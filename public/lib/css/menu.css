@@ -1,0 +1,72 @@
+
+  .body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: rgb(233, 220, 211);
+  }
+  aside {
+    background-color: rgb(78, 64, 59);
+    color: rgb(233, 220, 211);
+    width: 260px;
+    padding: 20px;
+    transition: width 0.3s ease;
+    overflow: hidden;
+  }
+  aside.collapsed {
+    width: 80px;
+  }
+  aside .toggle {
+    text-align: right;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  aside h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(233, 220, 211);
+    transition: opacity 0.3s ease;
+  }
+  aside.collapsed h2 {
+    opacity: 0;
+  }
+  aside nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    color: rgb(233, 220, 211);
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  aside nav a:hover {
+    background-color: rgb(233, 220, 211);
+    color: rgb(78, 64, 59);
+  }
+  aside nav span {
+    transition: opacity 0.3s;
+  }
+  aside.collapsed nav span {
+    opacity: 0;
+  }
+  aside .bola{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:#fff;
+    padding: 5px;
+    overflow: hidden;
+    margin: auto;
+    transition: all .35s;
+  }
+  aside.collapsed h3{
+    display:none;
+  }
+  main {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+  }
+  
